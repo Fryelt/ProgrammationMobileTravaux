@@ -1,0 +1,42 @@
+﻿<html>
+	<head>
+		<title>Singles Square</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/StyleA.css">
+	</head>
+	
+	<body>
+		<header>
+			<h1>Singles Square</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li class="menu" id="A" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="../index.html">Accueil</a></li>
+				<li class="menu" id="I" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="#">Inscription</a></li>
+				<li class="menu" id="P" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="Profil.html">Profils</a></li>
+				<li class="menu" id="C" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="Salle.html">ChatRooms</a></li>
+			</ul>
+		</nav>
+		<h2>Formulaire d'inscription</h2>
+		<form id="inscription" onsubmit="return verif(this);">
+		<fieldset>
+			<table>
+				<tr><th class="label">Nom</th><th><input type="text" id="Nom" autofocus maxlength=40 onblur="verifNom(this)"></th></tr>
+				<tr><th class="label">Âge</th><th><input type="number" id="Age" value ="20" onblur="verifAge(this)"></th></tr>
+				<tr><th class="label">Sexe</th><th><input colspan=2 type="radio" name="sexe" checked>Mâle<input type="radio" name="sexe">Femele</th></tr>
+				<tr><th class="label">Adresse courielle</th><th><input type="email" id="Email" placeholder="example@domain.com" onblur="verifEmail(this)"></th></tr>
+				<tr><th class="label">Mot de passe</th><th><input type="password" id="MdP1" maxlength=20 onblur="verifMdP1(this)"></th></tr>
+				<tr><th class="label">Répéter mot de passe</th><th><input type="password" id="MdP2" maxlength=20 onblur="verifMdP2(this)"></th></tr>
+				<tr><th class="label" id="confirmer"><input type="submit" value="Confirmer"></th></tr>
+			</table>
+		</fieldset>
+		</form>
+		<footer>
+			Site internet propriété de Bajamin Potvin et Mathieu Bergeron
+			<br>
+			contactez nous via email: *non disponibles pour le moment*
+		</footer>
+		<script src="../JavaScript/scriptn.js"></script>
+	</body>
+
+</html>

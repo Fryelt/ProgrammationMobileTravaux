@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Singles Square</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/StyleA.css">
+	</head>
+	
+	<body>
+		<header>
+			<h1>Singles Square</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li class="menu" id="A" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="../index.html">Accueil</a></li>
+				<li class="menu" id="I" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="Formulaire.html">Inscription</a></li>
+				<li class="menu" id="P" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="#">Profils</a></li>
+				<li class="menu" id="C" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="Salle.html">ChatRooms</a></li>
+			</ul>
+		</nav>
+		<input type="text" id="status" onkeypress="CheckT(event)" placeholder="Message">
+		<section id="profil">Taper dans la boite de message plus haute pour mettre des messages de status
+		<br></section>
+		<div>
+		<div id="g">
+		<section>
+		<p>À droite, voici un apercu de la liste des gens sur notre site web !</p>
+		</section>
+		</div>
+		<div id="d">
+		<input type="text" id="search" onkeyup="searchList()" placeholder="Search ...">
+		<br>
+		<ul id="UL">
+			<li class="LIdata"><a href="#">Adele</a></li>
+			<li class="LIdata"><a href="#">Agnes</a></li>
+			<li class="LIdata"><a href="#">Billy</a></li>
+			<li class="LIdata"><a href="#">Bob</a></li>
+			<li class="LIdata"><a href="#">Calvin</a></li>
+			<li class="LIdata"><a href="#">Christina</a></li>
+			<li class="LIdata"><a href="#">Cindy</a></li>
+			<li class="LIdata"><a href="#">Ziniata</a></li>
+			<li class="LIdata"><a href="#">Horald</a></li>
+		</ul>
+		</div>
+		</div>
+		<footer>
+			Site internet propriété de Bajamin Potvin et Mathieu Bergeron
+			<br>
+			contactez nous via email: *non disponibles pour le moment*
+		</footer>
+	</body>
+	<script src="../JavaScript/scriptn.js"></script>
+</html>

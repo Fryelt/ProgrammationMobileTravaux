@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Singles Square</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/StyleA.css">
+	</head>
+	
+	<body>
+		<header>
+			<h1>Singles Square</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li class="menu" id="A" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="../index.html">Accueil</a></li>
+				<li class="menu" id="I" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="Formulaire.html">Inscription</a></li>
+				<li class="menu" id="P" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="Profil.html">Profils</a></li>
+				<li class="menu" id="C" onmouseover="navI(this.id)" onmouseout="navO(this.id)"><a href="#">ChatRooms</a></li>
+			</ul>
+		</nav>
+		<h2>Salle de discussion publique</h2>
+		<form id="inscription">
+		<fieldset>
+		<textarea rows="10" cols="50" disabled id="chat"></textarea>
+		<input type="text" id="texte" autofocus><input type="button" value="Envoyer" onclick="insert()" id="envoieC">
+		</fieldset>
+		</form>
+		<footer>
+			Site internet propriété de Bajamin Potvin et Mathieu Bergeron
+			<br>
+			contactez nous via email: *non disponibles pour le moment*
+		</footer>
+	</body>
+		<script src="../JavaScript/scriptn.js"></script>
+</html>
